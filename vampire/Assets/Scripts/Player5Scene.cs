@@ -18,7 +18,7 @@ public class Player5Scene : MonoBehaviour
 
         if (player5vampire == false)
         {
-            playerRole.text = "You are a Villager! You should find the Vampire and hang it.";
+            playerRole.text = "You are a Villager! You should discuss with other players who could be vampire and decide on a player to hang.";
             GameObject.Find("Button").SetActive(false);
             GameObject.Find("Button2").SetActive(false);
             GameObject.Find("Button3").SetActive(false);
@@ -26,7 +26,7 @@ public class Player5Scene : MonoBehaviour
         }
         else
         {
-            playerRole.text = "You are a Vampire! Select a villager to kill.";
+            playerRole.text = "You are a Vampire! Select a player to kill.";
             GameObject.Find("NextButton").SetActive(false);
 
             if (Game.player1dead == true)

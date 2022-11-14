@@ -22,7 +22,7 @@ public class VoteResult : MonoBehaviour
             else
             {
                 Game.player1dead = true;
-                voteResult.text = "Player 1 is hanged.";
+                voteResult.text = "Player 1";
             }            
         }
         else if((Game.player2IsVoted > Game.player1IsVoted) && (Game.player2IsVoted > Game.player3IsVoted) &&
@@ -36,7 +36,7 @@ public class VoteResult : MonoBehaviour
             else
             {
                 Game.player2dead = true;
-                voteResult.text = "Player 2 is hanged.";
+                voteResult.text = "Player 2";
             }
         }
         else if ((Game.player3IsVoted > Game.player1IsVoted) && (Game.player3IsVoted > Game.player2IsVoted) &&
@@ -50,7 +50,7 @@ public class VoteResult : MonoBehaviour
             else
             {
                 Game.player3dead = true;
-                voteResult.text = "Player 3 is hanged.";
+                voteResult.text = "Player 3";
             }
         }
         else if ((Game.player4IsVoted > Game.player1IsVoted) && (Game.player4IsVoted > Game.player2IsVoted) &&
@@ -64,7 +64,7 @@ public class VoteResult : MonoBehaviour
             else
             {
                 Game.player4dead = true;
-                voteResult.text = "Player 4 is hanged.";
+                voteResult.text = "Player 4";
             }
         }
         else if ((Game.player5IsVoted > Game.player1IsVoted) && (Game.player5IsVoted > Game.player2IsVoted) &&
@@ -78,7 +78,7 @@ public class VoteResult : MonoBehaviour
             else
             {
                 Game.player5dead = true;
-                voteResult.text = "Player 5 is hanged.";
+                voteResult.text = "Player 5";
             }
         }
         else
