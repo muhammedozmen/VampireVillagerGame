@@ -18,6 +18,8 @@ public class Player3Scene : MonoBehaviour
 
         if (player3vampire == false)
         {
+            GameObject.Find("RoleImage").SetActive(true);
+            GameObject.Find("RoleImage2").SetActive(false);
             playerRole.text = "You are a Villager! You should discuss with other players who could be vampire and decide on a player to hang.";
             GameObject.Find("Button").SetActive(false);
             GameObject.Find("Button2").SetActive(false);
@@ -26,6 +28,8 @@ public class Player3Scene : MonoBehaviour
         }
         else
         {
+            GameObject.Find("RoleImage").SetActive(false);
+            GameObject.Find("RoleImage2").SetActive(true);
             playerRole.text = "You are a Vampire! Select a player to kill.";
             GameObject.Find("NextButton").SetActive(false);
 
